@@ -124,10 +124,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-DEFAULT_FROM_EMAIL = 'killerkpoke@gmail.com'
+DEFAULT_FROM_EMAIL = ''  # this is the default email, if the email host user and pass not used
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' #Change 'console' to 'smtp' later.
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'killerkpoke@gmail.com' #Need own mail server, or Sendgrid/MailGun
-EMAIL_HOST_PASSWORD = 'esbmasapbns2' #Need own mail server, or Sendgrid/MailGun
+EMAIL_HOST_USER = ''  # Need own mail server, or Sendgrid/MailGun. Email needed who send you the mail
+EMAIL_HOST_PASSWORD = ''  # Need own mail server, or Sendgrid/MailGun password
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
