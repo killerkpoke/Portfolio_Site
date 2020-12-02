@@ -33,7 +33,7 @@ def contact(request):
         subject = contact_list[3]
         message = contact_list[4] 
         try:
-            send_mail(Pname+" - "+subject, message +"\nFrom : "+from_email, None, ['balazs.david.kohalmi@gmail.com'], fail_silently=False)
+            send_mail(Pname+" - "+subject, message +"\nFrom : "+from_email, None, [' """your email address which receive others messages """ '], fail_silently=False)
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         
